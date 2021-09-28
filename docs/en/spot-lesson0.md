@@ -104,7 +104,7 @@ Check if Yggdrasil works well.
 
 For that try to ping Spot address:
 ```bash
-ping strelka.ygg.khassanov.xyz
+ping -6 strelka.ygg.merklebot.xyz
 ```
 > To open terminal in Windows press `Win+R`, type `cmd` and press `Enter`.
 
