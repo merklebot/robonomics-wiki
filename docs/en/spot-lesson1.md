@@ -23,7 +23,7 @@ Create a Python script controls robot body position. Run your script on Spot to 
 ## Theory
 
 Read [Understanding Spot Programming](https://dev.bostondynamics.com/docs/python/understanding_spot_programming) page in Spot SDK documentation.
-You need to understand what is `E-Stop` and how make initialization in your Python script in order to to let the robot execute commands.
+You need to understand what is `E-Stop` and how make initialization in your Python script in order to let the robot execute commands.
 
 You can find more detailed information for this lesson in [Base Services](https://dev.bostondynamics.com/docs/concepts/base_services), [Geometry and Frames](https://dev.bostondynamics.com/docs/concepts/geometry_and_frames), [Robot Services](https://dev.bostondynamics.com/docs/concepts/robot_services) and [E-Stop](https://dev.bostondynamics.com/docs/concepts/estop_service) sections of the Spot SDK documentation.
 

@@ -19,9 +19,10 @@ The list of moves:
 
 Create and execute a Python script that implements behavior described.
 
-> You can find Spot local coordinates with:
+> You can find Spot local coordinates with (before you need to create `state_client`, you can find information about it in [Understanding Spot Programming](https://dev.bostondynamics.com/docs/python/understanding_spot_programming)):
 > ```python
-> get_vision_tform_body(robot_state_client.get_robot_state().kinematic_state.transforms_snapshot)
+> from bosdyn.client.frame_helpers import get_vision_tform_body
+> get_vision_tform_body(state_client.get_robot_state().kinematic_state.transforms_snapshot)
 > ```
 
 ## Theory
@@ -50,6 +51,8 @@ def synchro_se2_trajectory_point_command(goal_x, goal_y, goal_heading,
 ```
 
 Check usage example [here](https://github.com/boston-dynamics/spot-sdk/blob/master/python/examples/frame_trajectory_command/frame_trajectory_command.py).
+
+> Attention! The example considers robot movement relative to the current position. In your case you must specify movements relative to the point where robot was turned on. That means you can set `goal_x` and `goal_y` values from the task.
 
 * Velocity Command
 
