@@ -11,11 +11,11 @@ In the second lesson you will learn how to use Spot Command services and walk wi
 You have a list of points with their local coordinates in the `/home/student/lessons` directory. Spot should go through these points. The origin of the local coordinates is in the place where Spot was turned on. On each point Spot should make one of the motions from the following list, then go to the next point. 
 
 The list of moves:
-* To turn around himself
-* To lie down in pose to change battery
-* To nod
-* To change the stance of robot's legs
-* To go sideways to the next point
+* To turn around himself,
+* To nod,
+* To change the stance of robot's legs,
+* To go sideways to the next point,
+* To lie down in pose to change battery (this command must be performed the last because it cuts the power to the motors).
 
 Create and execute a Python script that implements behavior described.
 
